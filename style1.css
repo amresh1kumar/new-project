@@ -1,0 +1,83 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: gray;
+}
+
+body h1 {
+   text-align:start;
+   margin-bottom: 20px;
+   margin-top: 20px;
+   margin-left: 150px;
+}
+
+form {
+   width: 50%;
+   position: absolute;
+   left: 0;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+form label {
+   font-size: 1.2rem;
+   position: absolute;
+   left: 0;
+   margin-left: 20px;
+}
+
+form input {
+   padding: 5px;
+   outline: none;
+   border: none;
+   border-radius: 4px;
+   font-size: 1.2rem;
+   padding-left: 50px;
+   padding-right: 50px;
+   margin-left: 90px;
+
+}
+
+form input[type=date] {
+   padding-left: 92px;
+   padding-right: 92px;
+}
+form input[type=text]{
+   text-transform: capitalize;
+}
+
+form input::placeholder {
+   font-size: 1.2rem;
+   text-transform: capitalize;
+}
+
+form textarea {
+   padding: 15px 10px 15px 10px;
+   margin-left: 90px;
+}
+
+form input[type=radio] {
+   margin-left: 40px;
+}
+form input[type=checkbox] {
+   margin-left: 50px;
+   margin-right: 10px;
+}
+
+form button{
+   padding: 8px;
+   border: none;
+   border-radius: 4px;
+   padding-left: 20px;
+   padding-right: 20PX;
+}
+form button:hover{
+   background-color: black;
+   color: #fff;
+}
+form button:active{
+   color: green;
+}

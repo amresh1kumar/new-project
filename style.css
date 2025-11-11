@@ -1,0 +1,251 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+/* navbar*/
+.container {
+   display: flex;
+   justify-content: space-between;
+   background-color: hsla(240, 100%, 50%, 0.822);
+   opacity:1;
+   width: 100%;
+   height: 90px;
+   position: fixed;
+   top: 0;
+   z-index: 1;
+}
+
+nav img {
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   margin: 20px 10px 20px 10px;
+}
+
+.list {
+   display: flex;
+   width: 50%;
+   justify-content: space-evenly;
+   background-color: transparent;
+   margin-right: 50px;
+   margin-bottom: 5px;
+   list-style-type: none;
+   margin-top: 35px;
+}
+
+.list a {
+   text-decoration: none;
+   color: white;
+   font-size: 1.2rem;
+}
+
+.list a:hover {
+   color: #000;
+   transform: scale(1.2);
+   transition: 0.3s;
+}
+
+/*navbar end*/
+
+#home-page,
+#about,
+#contact,
+#service,
+#login {
+   scroll-margin-top: 100px;
+   text-align: center;
+   margin-top: 600px;
+   /* margin: 600px; */
+
+}
+
+/*Login page*/
+#cpass {
+   margin-right: 88px;
+}
+
+#login {
+   border: 1px solid red;
+   width: 60%;
+   height: 60vh;
+}
+
+#login label {
+   font-size: 1.2rem;
+   position: absolute;
+   left: 0;
+   margin-left: 15px;
+}
+
+#login input {
+   font-size: 1.2rem;
+   outline: none;
+   padding: 5px;
+   width: 300px;
+   border-radius: 4px;
+}
+
+#login h2 {
+   margin-top: 50px;
+   margin-bottom: 40px;
+}
+
+#cpass {
+   margin-left: 90px;
+}
+
+#login button {
+   border: none;
+   color: #fff;
+   background-color: blue;
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 4px;
+   font-size: 1.2rem;
+}
+
+#login button:hover {
+   background-color: hsla(240, 100%, 50%, 0.849);
+   transition: 0.3s;
+   transform: scale(1.2);
+}
+
+#login a {
+   font-size: 1.3rem;
+   margin-left: 10px;
+   transform: scale(1.2);
+   transition: 0.3s;
+}
+
+#login a:hover {
+   color: black;
+}
+
+/*Login page end*/
+
+/*Contact page*/
+#contact {
+   border: 1px solid red;
+   width: 100%;
+   height: 60vh;
+}
+
+
+#contact label {
+   font-size: 1.5rem;
+   margin-right: 20px;
+}
+
+#contact input {
+   font-size: 1.2rem;
+   outline: none;
+   padding: 10px;
+}
+
+#contact input[type=email] {
+   margin-left: 47px;
+}
+
+#contact h2 {
+   margin-top: 50px;
+   margin-bottom: 40px;
+}
+
+/*contact end */
+
+/*Home page*/
+#home-page {
+   border: 1px solid red;
+   width: 100%;
+}
+
+/*Home page end*/
+
+/*register page*/
+
+#register {
+   border: 1px solid red;
+   width: 100%;
+   height: 60vh;
+}
+
+#register label {
+   font-size: 1.5rem;
+   margin-right: 20px;
+}
+
+#register input {
+   font-size: 1.2rem;
+   outline: none;
+   padding: 10px;
+}
+
+#register input[type=email] {
+   margin-left: 35px;
+}
+
+#register h2 {
+   margin-top: 50px;
+   margin-bottom: 40px;
+}
+
+#register button {
+   border: none;
+   color: #fff;
+   background-color: blue;
+   padding: 10px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border-radius: 4px;
+   font-size: 1.2rem;
+}
+
+#register button:hover {
+   background-color: hsla(240, 100%, 50%, 0.849);
+   transition: 0.3s;
+   transform: scale(1.2);
+}
+
+#register a {
+   font-size: 1.3rem;
+   margin-left: 10px;
+   transform: scale(1.2);
+   transition: 0.3s;
+}
+
+#register a:hover {
+   color: black;
+}
+
+/*register page end*/
+
+
+/* Footer page*/
+.footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: hsla(240, 100%, 50%, 0.822);
+   height: 80px;
+}
+
+footer p {
+   /* border: 1px solid red; */
+   text-align: center;
+   padding-top: 30px;
+   font-size: 1rem;
+   color: gray;
+   position: relative;
+}
+
+footer p span {
+   font-size: 0.9rem;
+
+}

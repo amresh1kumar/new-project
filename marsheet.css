@@ -1,0 +1,71 @@
+* {
+   margin: 0;
+   padding: 0;
+}
+
+main {
+   display: flex;
+   width: 50%;
+   height: 115vh;
+   /* border: 2px solid red; */
+   margin-left: 20px;
+   margin-bottom: 20px;
+  
+}
+
+#details h1 {
+   text-align: center;
+   margin-bottom: 20px;
+   margin-top: 50px;
+   margin-left: 100px;
+   color: red;
+}
+#details input{
+   width: 60%;
+   outline: none;
+   border-radius: 5px solid;
+   padding: 10px;
+   font-size: 1.2rem;
+   margin-left: 10px;
+}
+#details input::placeholder{
+   font-size: 1.2rem;
+   text-transform: capitalize;
+}
+#details #f-name{
+ 
+   margin-left: 20px;
+}
+#details #s-name
+{
+   margin-left: 11px;
+}
+#details #m-name
+{
+   margin-left:13px;
+}
+
+#details label{
+   font-size: 1.2rem;
+}
+
+#image img {
+   width: 125px;
+   height: 125px;
+   margin-top: 120px;
+   margin-right: 70px;
+   margin-left: 30px;
+}
+
+table {
+   width: 140%;
+}
+
+table td {
+   text-align: center;
+}
+
+#totalmarks{
+   color: red;
+   text-align: start;
+}

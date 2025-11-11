@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Register-Marksheet</title>
+   <link rel="stylesheet" href="./style1.css">
+</head>
+
+<body>
+   <h1><u>Register Marksheet</u></h1>
+   <form style="text-align: center;">
+      <label for="s-name">First Name :</label>
+      <input id="s-name" type="text" placeholder="enter your first name" value="">
+      <br><br>
+      <label for="l-name">Last Name :</label>
+      <input id="l-name" type="text" placeholder="enter your last name" value="">
+      <br><br>
+      <label for="f-name">Father Name :</label>
+      <input id="f-name" type="text" placeholder="enter your father name" value="">
+      <br><br>
+      <label for="m-name">Mother Name :</label>
+      <input id="m-name" type="text" placeholder="enter your mother name" value="">
+      <br><br>
+      <label for="s-dob">Date of Birth :</label>
+      <input id="s-dob" type="date" value="">
+      <br> <br>
+      <label for="mo-number">Mobile Number:</label>
+      <input id="mo-number" type="number" value="">
+      <br><br>
+      <label for="s-email">Email :</label>
+      <input id="s-email" type="email" value="">
+      <br><br>
+      <label for="clgname">College Name :</label>
+      <input id="clgname" type="text" value="">
+      <br><br>
+      <label for="s-address">Address:</label>
+      <textarea id="s-address" ></textarea>
+      <br><br>
+      <label>Gender :</label>
+      <input type="radio" name="Gender" value="Male"> Male
+      <input type="radio" name="Gender" value="Female"> Female
+      <input type="radio" name="Gender" value="Other"> Others
+      <br><br>
+      <label>Languages :</label>
+      <input type="checkbox" name="lang" value="English"> English
+      <input type="checkbox" name="lang" value="Hindi"> Hindi
+      <br><br>
+      <label for="s-pass">Password :</label>
+      <input id="s-pass" type="text" value="">
+      <br><br>
+      <label for="s-cpass">Confirm Password :</label>
+      <input id="s-cpass" type="text" value="">
+      <br><br>
+      <button onclick="registerForm()" type="button">Register</button>
+   </form>
+   <script>
+      function registerForm() {
+         //student first name
+         let s_name = document.getElementById('s-name').value;
+         localStorage.setItem(" First Name", s_name)
+
+         //student last name
+         let l_name = document.getElementById('l-name').value;
+         localStorage.setItem("Last Name", l_name)
+
+         //student father name
+         let f_name = document.getElementById('f-name').value;
+         localStorage.setItem("Fathe Name", f_name)
+
+         //student mother name
+         let m_name = document.getElementById('m-name').value;
+         localStorage.setItem("Mother Name", m_name)
+
+         //student dob
+         let mo_number = document.getElementById('mo-number').value;
+         localStorage.setItem("Mobile No.", mo_number)
+
+         //student mobile number
+         let s_dob = document.getElementById('s-dob').value;
+         localStorage.setItem("Date of Birth", s_dob)
+
+         //student email
+         let s_email = document.getElementById('s-email').value;
+         localStorage.setItem("Email", s_email)
+
+         let clg_name = document.getElementById('clgname').value;
+         localStorage.setItem('College Name',clg_name)
+         //student address
+         let s_address = document.getElementById('s-address').value;
+         localStorage.setItem("Address", s_address)
+
+         //student gender
+         // let s_gender = document.getElementById('s-gender').value;
+         // localStorage.setItem("Gender", s_gender)
+
+         //student language
+         //  let s_lang = document.getElementById('s-lang').value;
+         //  localStorage.setItem("Languages", s_lang)
+
+         const gender = document.querySelector('input[name="Gender"]:checked');
+         localStorage.setItem("sgender", gender ? gender.value : "");
+
+         const langs = document.querySelectorAll('input[name="lang"]:checked');
+         const selectedLangs = Array.from(langs).map(lang => lang.value);
+         localStorage.setItem("slang", selectedLangs.join(', '));
+
+         //student password
+         let s_pass = document.getElementById('s-pass').value;
+         localStorage.setItem("cpass", s_pass)
+
+         //student confirm password
+         let s_cpass = document.getElementById('s-cpass').value;
+         localStorage.setItem("Cpass", s_cpass)
+      }
+   </script>
+
+</body>
+
+</html>
